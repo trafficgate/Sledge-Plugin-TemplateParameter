@@ -1,0 +1,9 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/Sledge/Plugin/TemplateParameter.pm
+t/00_compile.t
+t/01_tmpl_param.t
+t/foo.html
+t/lib/Sledge/TestPages.pm

@@ -1,0 +1,39 @@
+NAME
+    Sledge::Plugin::TemplateParameter -
+    テンプレートファイルへのパラメータの定義
+
+SYNOPSIS
+      package Project::Pages;
+      use Sledge::Plugin::TemplateParameter;
+
+      package Project::Pages::FooBar;
+
+      sub dispatch_foo {
+              my $self = shift;
+
+              $self->load_template('bar')
+      }
+  
+      sub dispatch_bar {
+      }
+
+      sub tmpl_param_bar {
+              my $self = shift;
+ 
+              $self->tmpl->param(hoge => 'huga')
+      }
+
+DESCRIPTION
+    テンプレートを出力する前 AFTER_DISPATCH フェイズに
+    テンプレート名で生成された、tmpl_param_xxxxx というメソッド
+    があれば実行します。
+
+    テンプレートごとに、DBからデータを拾ってこなくてはいけない場合などを
+    想定しています。
+
+AUTHOR
+    KIMURA, takefumi <takefumi@takefumi.com>
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+

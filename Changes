@@ -1,0 +1,8 @@
+Revision history for Perl extension Sledge::Plugin::TemplateParameter
+
+0.02  Fri Nov  5 17:49:25 2004
+	- Windowsでうまく動かなかったバグを修正しました。
+	(Thanks to Kohei Ohtsuka)
+
+0.01  Fri Apr  4 11:09:48 2003
+	- original version
